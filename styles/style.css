@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/*mobile first*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(68, 68, 68);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #F2ECD8;
+    margin: 20px;
+    font-weight: bolder;
+}
+
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+
+footer{
+    background-color: #3a3548;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+}
+
+.icon {
+    width: 40px;
+}
+
+
+/*declaro las areas de mi grilla*/
+
+.header {
+    grid-area: header;
+}
+
+.portada {
+    grid-area: portada;
+}
+
+.bienvenida {
+    grid-area: bienvenida;
+}
+
+#episodios {
+    grid-area: episodios;
+}
+
+.contacto {
+    grid-area: contacto;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.envoltura {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "portada"
+    "bienvenida"
+    "episodios"
+    "contacto"
+    "footer";
+}
+
+
+.portadaCarrusel{
+    width: 100%;
+}
+
+.portada {
+    background-color: rgb(68, 68, 68);
+}
+
+
+.bienvenida {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background-color: rgb(68, 68, 68);
+    text-align: center;
+    padding: 2em;
+}
+
+.titulo-bien {
+    color: #fafafa;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+
+.parrafo-bien {
+    color: #F2ECD8;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.poster {
+    width: 300px;
+    height: 450px;
+    border: 2px solid black;
+    margin: 20px 0;
+    transition: all 1s;
+}
+
+.poster:hover {
+    transform: scale(1.1);
+}
+
+
+.contacto {
+    background-color: #F2ECD8;
+    text-align: center;
+    color: rgb(68, 68, 68);;
+    font-weight: 900;
+    padding: 2em;
+}
+
+.texto-contacto {
+    margin-bottom: 1em;
+}
+
+footer{
+    background-color: rgb(68, 68, 68);
+    margin-top: 0;
+}
+
+/*personajes*/
+
+.header {
+    grid-area: header;
+}
+
+.caja-personajes {
+    grid-area: personajes;
+}
+
+.contacto {
+    grid-area: contacto;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.envoltura-per {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "personajes"
+    "contacto"
+    "footer";
+}
+
+.box-foto {
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+}
+
+.descripcion-per,
+.descripcion-per2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background-color: #F2ECD8;
+    padding: 5% 10%;
+}
+
+.titulo-per {
+    margin-bottom: 0.5em;
+}
+
+.contacto {
+    background-color: #fafafa;
+}
+
+/*cierre de personajes*/
+
+
+
+/*episodios*/
+
+.header {
+    grid-area: header;
+}
+
+.contenedor-episodio {
+    grid-area: contenedor-episodio;
+}
+
+.box-video {
+    grid-area: video;
+}
+
+.contacto {
+    grid-area: contacto;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.envoltura-ep {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "contenedor-episodio"
+    "video"
+    "contacto"
+    "footer";
+}
+
+.margen-ep {
+    display: flex;
+    margin: 5% 10%;
+}
+
+.contenedor-episodio {
+    display: flex;
+    background-color: #F2ECD8;
+}
+
+.descripcion-ep {
+    margin-left: 1em;
+    font-size: 0.55em;
+}
+
+.desc-ep {
+    text-align: justify;
+}
+
+.portada-episodio {
+    display: flex;
+}
+
+.foto-portada {
+    height: 100%;
+}
+
+.contenedor-video {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5%;
+    height: 30em;
+}
+
+.box-video {
+    display: flex;
+    justify-content: center;
+    margin: 5% 10%;
+    flex-direction: column;
+}
+
+iframe {
+    width: 100%;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botones-ep1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botones-ep5 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.boton-izq,.boton-der {
+    color: rgb(68, 68, 68);
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #F2ECD8;
+    transition: all 0.5s;
+}
+
+.boton-der:hover {
+    transform: scale(0.9);
+}
+
+.boton-izq:hover {
+    transform: scale(0.9);
+}
+
+.enlace-boton {
+    text-decoration: none;
+}
+
+
+.contacto {
+    background-color: #F2ECD8;
+}
+
+
+
+@media (min-width:500px){
+    .envoltura {
+        display: grid;
+        grid-template-areas: 
+        "header     header header"
+        "portada    portada"
+        "bienvenida bienvenida"
+        "episodios  episodios"
+        "contacto   contacto"
+        "footer     footer";
+    }
+
+    .descripcion-ep {
+        font-size: 0.75em;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+}
+
+@media (min-width:768px){
+    .envoltura{
+        grid-template-areas: 
+        "header     header  header   "
+        "portada    portada    "
+        "bienvenida bienvenida "
+        "episodios  episodios  "
+        "contacto   contacto   "
+        "footer     footer     ";
+    }
+
+
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bienvenida {
+        padding-right: 5em;
+        padding-left: 5em;
+    }
+
+    /*personajes*/
+    
+    .fondo-per, .fondo-per2 {
+        display: flex;
+        align-items: center;
+        padding: 2em 5em;
+    }
+
+    .fondo-per {
+        background-color: #F2ECD8;
+    }
+
+    .box-foto {
+        padding: 0;
+        border: 2px solid black;
+    }
+
+    .descripcion-per2 {
+        background-color:#ffffff;
+    }
+
+    .contacto {
+        background-color: #F2ECD8;
+    }
+
+    /*cierre de personajes*/
+    
+    .descripcion-ep {
+        font-size: 1em;
+    }
+
+
+}
+
+@media (min-width: 1024px){
+    
+
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+
+    /*personajes*/
+
+    .fondo-per, .fondo-per2 {
+        padding: 2em 6em;
+    }
+
+    /*cierre de personajes*/
+
+    .descripcion-ep {
+        font-size: 1em;
+    }
+
+}
+
+@media (min-width: 1200px){
+
+    /*personajes*/
+
+    .fondo-per, .fondo-per2 {
+        padding: 3em 7em;
+    }
+
+    .descripcion-per, .descripcion-per2 {
+        width: 100%;
+    }
+
+    /*cierre de personajes*/
+
+    .contenedor-video {
+        height: 40em;
+    }
+
+}
