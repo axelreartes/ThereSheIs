@@ -17,11 +17,6 @@ body {
     background-color: #ffffff;
 }
 
-.portada-altura {
-    height: 100%;
-    width: 100%;
-}
-
 
 .bienvenida {
     background-color: rgb(68, 68, 68);
@@ -288,10 +283,7 @@ iframe {
 
 @media (min-width: 1200px){
 
-    .portada-altura {
-        height: 800px;
-        width: 100%;
-    }
+
 
     /*personajes*/
 
