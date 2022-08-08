@@ -8,103 +8,22 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
     font-family: 'Open Sans', sans-serif;
 }
 
-header {
-    font-size: large;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgb(68, 68, 68);
-    padding-top: 1em;
-    padding-bottom: 1em;
+
+.navbar-fondo {
+    background-color: #ffffff;
 }
 
-.menu li a {
-    text-decoration: none;
-    color: #F2ECD8;
-    margin: 20px;
-    font-weight: bolder;
-}
-
-
-nav ul {
-    display: flex;
-}
-
-nav ul li {
-    list-style-type: none;
-}
-
-
-footer{
-    background-color: #3a3548;
-    margin-bottom: 0;
-    display: flex;
-    justify-content: flex-end;
-    padding: 1em;
-}
-
-.icon {
-    width: 40px;
-}
-
-
-/*declaro las areas de mi grilla*/
-
-.header {
-    grid-area: header;
-}
-
-.portada {
-    grid-area: portada;
-}
-
-.bienvenida {
-    grid-area: bienvenida;
-}
-
-#episodios {
-    grid-area: episodios;
-}
-
-.contacto {
-    grid-area: contacto;
-}
-
-footer {
-    grid-area: footer;
-}
-
-.envoltura {
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "portada"
-    "bienvenida"
-    "episodios"
-    "contacto"
-    "footer";
-}
-
-
-.portadaCarrusel{
+.portada-altura {
+    height: 100%;
     width: 100%;
 }
 
-.portada {
-    background-color: rgb(68, 68, 68);
-}
-
 
 .bienvenida {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
     background-color: rgb(68, 68, 68);
     text-align: center;
     padding: 2em;
@@ -122,21 +41,19 @@ footer {
     font-weight: 600;
 }
 
-.contenedor {
+#episodios {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 15px;
     justify-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+}
+
+.caja-poster-episodio {
+    margin: 30px 0px;
 }
 
 .poster {
     width: 300px;
     height: 450px;
     border: 2px solid black;
-    margin: 20px 0;
     transition: all 1s;
 }
 
@@ -159,35 +76,18 @@ footer {
 
 footer{
     background-color: rgb(68, 68, 68);
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
     margin-top: 0;
 }
 
-/*personajes*/
 
-.header {
-    grid-area: header;
+.icon {
+    width: 40px;
 }
 
-.caja-personajes {
-    grid-area: personajes;
-}
-
-.contacto {
-    grid-area: contacto;
-}
-
-footer {
-    grid-area: footer;
-}
-
-.envoltura-per {
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "personajes"
-    "contacto"
-    "footer";
-}
 
 .box-foto {
     display: flex;
@@ -219,35 +119,6 @@ footer {
 
 /*episodios*/
 
-.header {
-    grid-area: header;
-}
-
-.contenedor-episodio {
-    grid-area: contenedor-episodio;
-}
-
-.box-video {
-    grid-area: video;
-}
-
-.contacto {
-    grid-area: contacto;
-}
-
-footer {
-    grid-area: footer;
-}
-
-.envoltura-ep {
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "contenedor-episodio"
-    "video"
-    "contacto"
-    "footer";
-}
 
 .margen-ep {
     display: flex;
@@ -339,16 +210,6 @@ iframe {
 
 
 @media (min-width:500px){
-    .envoltura {
-        display: grid;
-        grid-template-areas: 
-        "header     header header"
-        "portada    portada"
-        "bienvenida bienvenida"
-        "episodios  episodios"
-        "contacto   contacto"
-        "footer     footer";
-    }
 
     .descripcion-ep {
         font-size: 0.75em;
@@ -360,22 +221,11 @@ iframe {
 }
 
 @media (min-width:768px){
-    .envoltura{
-        grid-template-areas: 
-        "header     header  header   "
-        "portada    portada    "
-        "bienvenida bienvenida "
-        "episodios  episodios  "
-        "contacto   contacto   "
-        "footer     footer     ";
-    }
 
-
-    .contenedor {
+    #episodios {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-
     .bienvenida {
         padding-right: 5em;
         padding-left: 5em;
@@ -417,14 +267,10 @@ iframe {
 
 @media (min-width: 1024px){
     
-
-    .contenedor {
+    #episodios {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        margin-left: 2em;
-        margin-right: 2em;
     }
-
 
     /*personajes*/
 
@@ -441,6 +287,11 @@ iframe {
 }
 
 @media (min-width: 1200px){
+
+    .portada-altura {
+        height: 800px;
+        width: 100%;
+    }
 
     /*personajes*/
 
