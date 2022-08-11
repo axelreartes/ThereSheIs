@@ -13,49 +13,63 @@ body {
 }
 
 
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 20;
+    border-bottom: 1px solid #F2ECD8;
+}
+
 .navbar-fondo {
     background-color: #ffffff;
 }
 
+/*index*/
 
-.bienvenida {
-    background-color: rgb(68, 68, 68);
-    text-align: center;
-    padding: 2em;
-}
+    .portada {
+        margin-top: 60px;
+    }
 
-.titulo-bien {
-    color: #fafafa;
-    font-size: 1.3em;
-    margin-bottom: 1em;
-}
+    .bienvenida {
+        background-color: rgb(68, 68, 68);
+        text-align: center;
+        padding: 5%;
+    }
 
-.parrafo-bien {
-    color: #F2ECD8;
-    font-size: 0.8em;
-    font-weight: 600;
-}
+    .titulo-bien {
+        color: #fafafa;
+        font-size: 1.3em;
+        margin-bottom: 1em;
+    }
 
-#episodios {
-    display: grid;
-    justify-items: center;
-}
+    .parrafo-bien {
+        color: #F2ECD8;
+        font-size: 0.8em;
+        font-weight: 600;
+    }
 
-.caja-poster-episodio {
-    margin: 30px 0px;
-}
+    #episodios {
+        display: grid;
+        justify-items: center;
+    }
 
-.poster {
-    width: 300px;
-    height: 450px;
-    border: 2px solid black;
-    transition: all 1s;
-}
+    .caja-poster-episodio {
+        margin: 30px 0px;
+    }
 
-.poster:hover {
-    transform: scale(1.1);
-}
+    .poster {
+        width: 300px;
+        height: 450px;
+        border: 2px solid black;
+        transition: all 1s;
+    }
 
+    .poster:hover {
+        transform: scale(1.1);
+    }
+
+/*cierre de index*/
 
 .contacto {
     background-color: #F2ECD8;
@@ -83,222 +97,320 @@ footer{
     width: 40px;
 }
 
+/*personajes*/
 
-.box-foto {
-    display: flex;
-    justify-content: center;
-    padding: 1em 0;
-}
+    .caja-personajes {
+        margin-top: 60px;
+    }
 
-.descripcion-per,
-.descripcion-per2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: justify;
-    background-color: #F2ECD8;
-    padding: 5% 10%;
-}
+    .box-foto {
+        display: flex;
+        justify-content: center;
+        padding: 1em 0;
+    }
 
-.titulo-per {
-    margin-bottom: 0.5em;
-}
+    .descripcion-per,
+    .descripcion-per2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        background-color: #F2ECD8;
+        padding: 5% 10%;
+    }
 
-.contacto {
-    background-color: #fafafa;
-}
+    .titulo-per {
+        margin-bottom: 0.5em;
+    }
 
 /*cierre de personajes*/
-
 
 
 /*episodios*/
 
 
-.margen-ep {
-    display: flex;
-    margin: 5% 10%;
-}
+    .margen-ep {
+    display: grid;
+    margin: 30px 10%;
+    justify-items: center;
+    }
 
-.contenedor-episodio {
-    display: flex;
-    background-color: #F2ECD8;
-}
+    .contenedor-episodio {
+        display: flex;
+        background-color: #F2ECD8;
+        margin-top: 60px;
+    }
 
-.descripcion-ep {
-    margin-left: 1em;
-    font-size: 0.55em;
-}
+    .descripcion-ep {
+        display: flex;
+        margin-top: 5%;
+        font-size: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.desc-ep {
-    text-align: justify;
-}
-
-.portada-episodio {
-    display: flex;
-}
-
-.foto-portada {
-    height: 100%;
-}
-
-.contenedor-video {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 5%;
-    height: 30em;
-}
-
-.box-video {
-    display: flex;
-    justify-content: center;
-    margin: 5% 10%;
-    flex-direction: column;
-}
-
-iframe {
-    width: 100%;
-}
-
-.botones {
-    display: flex;
-    justify-content: space-between;
-}
-
-.botones-ep1 {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.botones-ep5 {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.boton-izq,.boton-der {
-    color: rgb(68, 68, 68);
-    font-weight: 600;
-    border-radius: 20px;
-    padding: 10px;
-    background-color: #F2ECD8;
-    transition: all 0.5s;
-}
-
-.boton-der:hover {
-    transform: scale(0.9);
-}
-
-.boton-izq:hover {
-    transform: scale(0.9);
-}
-
-.enlace-boton {
-    text-decoration: none;
-}
+    .desc-ep {
+        text-align: justify;
+    }
 
 
-.contacto {
-    background-color: #F2ECD8;
-}
+    .foto-portada {
+        height: 300px;
+    }
 
+    .contenedor-video {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 30px;
+        height: 280px;
+    }
+
+    .box-video {
+        display: flex;
+        justify-content: center;
+        margin: 30px 10%;
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+
+    .boton-izq,.boton-der {
+        color: rgb(68, 68, 68);
+        font-weight: 600;
+        border-radius: 20px;
+        background-color: #F2ECD8;
+        transition: all 0.5s;
+    }
+
+    .boton-der:hover {
+        transform: scale(0.9);
+    }
+
+    .boton-izq:hover {
+        transform: scale(0.9);
+    }
+
+    .enlace-boton {
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .contacto-personajes {
+        background-color: #fafafa;
+    }
+
+/*cierre personajes*/
 
 
 @media (min-width:500px){
 
-    .descripcion-ep {
-        font-size: 0.75em;
+    /*episodios*/
+
+    .margen-ep {
+        display: flex;
+        }
+    
+        .contenedor-episodio {
+            display: flex;
+            background-color: #F2ECD8;
+            margin-top: 60px;
+        }
+    
+        .descripcion-ep {
+            display: flex;
+            margin-top: 0;
+            margin-left: 5%;
+            font-size: 13px;
+            align-items: flex-start;
+        }
+
+        .contenedor-video {
+            height: 300px;
+        }
+
+        .botones {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .botones-ep1 {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .botones-ep5 {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+    
+    /*cierre episodios*/
     }
 
-    footer {
-        margin-top: 0;
+@media (min-width: 720px) {
+
+    /*cambio de tamaño de la navbar*/
+
+        .navbar-expand-lg .navbar-collapse {
+            display: flex!important;
+            flex-basis: auto;
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: none;
+        }
+
+        .navbar-expand-lg .navbar-nav {
+            flex-direction: row;
+        }
+
+        .navbar-expand-lg .navbar-nav .nav-link {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+
+        }
+
+        .navbar-expand-lg .navbar-nav .dropdown-menu {
+            position: absolute;
+        }
+
+    /*cierre cambio de tamaño de la navbar*/
+
+    /*episodios*/
+
+    .descripcion-ep {
+        font-size: 90%;
     }
+
+    .contenedor-video {
+        height: 450px;
+    }
+
+    /*cierre episodios*/
 }
+
+
 
 @media (min-width:768px){
 
-    #episodios {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .bienvenida {
-        padding-right: 5em;
-        padding-left: 5em;
-    }
+    /*index*/
+
+        .bienvenida {
+            padding: 5% 15%;
+        }
+
+        #episodios {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    
+
+    /*cierre index*/
 
     /*personajes*/
     
-    .fondo-per, .fondo-per2 {
-        display: flex;
-        align-items: center;
-        padding: 2em 5em;
-    }
+        .fondo-per, .fondo-per2 {
+            display: flex;
+            align-items: center;
+            padding: 2em 5em;
+        }
 
-    .fondo-per {
-        background-color: #F2ECD8;
-    }
+        .fondo-per {
+            background-color: #F2ECD8;
+        }
 
-    .box-foto {
-        padding: 0;
-        border: 2px solid black;
-    }
+        .box-foto {
+            padding: 0;
+            border: 2px solid black;
+        }
 
-    .descripcion-per2 {
-        background-color:#ffffff;
-    }
+        .descripcion-per2 {
+            background-color:#ffffff;
+        }
 
-    .contacto {
-        background-color: #F2ECD8;
-    }
+        .contacto {
+            background-color: #F2ECD8;
+        }
 
-    /*cierre de personajes*/
+
+    /*cierre personajes*/
+
+    /*episodios*/
     
-    .descripcion-ep {
-        font-size: 1em;
-    }
+        .descripcion-ep {
+            font-size: 100%;
+        }
 
-
+    /*cierre episodios*/
 }
 
 @media (min-width: 1024px){
-    
-    #episodios {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+
+    /*index*/
+
+        .bienvenida {
+            padding: 5% 25%;
+        }
+
+        #episodios {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+    /*cierre index*/
 
     /*personajes*/
 
-    .fondo-per, .fondo-per2 {
-        padding: 2em 6em;
-    }
+        .fondo-per, .fondo-per2 {
+            padding: 2em 6em;
+        }
 
     /*cierre de personajes*/
+    
+    /*episodios*/
 
-    .descripcion-ep {
-        font-size: 1em;
-    }
+        .descripcion-ep {
+            font-size: 130%;
+        }
 
+    /*cierre episodios*/
 }
 
 @media (min-width: 1200px){
 
+    /*index*/
+    #episodios {
+        padding: 0 5%;
+    }
 
+    .poster {
+        width: 350px;
+        height: 500px;
+    }
+    /*cierre index*/
 
     /*personajes*/
 
-    .fondo-per, .fondo-per2 {
-        padding: 3em 7em;
-    }
+        .fondo-per, .fondo-per2 {
+            padding: 3em 7em;
+        }
 
-    .descripcion-per, .descripcion-per2 {
-        width: 100%;
-    }
+        .descripcion-per, .descripcion-per2 {
+            width: 100%;
+        }
 
-    /*cierre de personajes*/
+    /*cierre personajes*/
 
-    .contenedor-video {
-        height: 40em;
-    }
+    /*episodios*/
+
+        .contenedor-video {
+            height: 800px;
+        }
+
+    /*cierre episodios*/
 
 }
