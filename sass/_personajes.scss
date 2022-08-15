@@ -1,0 +1,64 @@
+.caja-personajes {
+    margin-top: 60px;
+
+    .box-foto {
+        display: flex;
+        justify-content: center;
+        padding: 1em 0;
+        @media (min-width:768px){
+            padding: 0;
+            border: 2px solid black;
+        }
+    }
+
+    .descripcion-per,
+    .descripcion-per2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        background-color:$colorA;
+        padding: 5% 10%;
+        @media (min-width: 1200px){
+            width: 100%;
+        }
+
+        .titulo-per {
+            margin-bottom: 0.5em;
+        }
+    }
+
+
+    .fondo-per, .fondo-per2 {
+        @media (min-width:768px){
+        display: flex;
+        align-items: center;
+        padding: 2em 5em;
+        }
+        @media (min-width: 1024px){
+        padding: 2em 6em;
+        }
+        @media (min-width: 1200px){
+        padding: 3em 7em;
+        }
+       
+    }
+
+    .fondo-per {
+        @media (min-width:768px){
+        background-color:$colorA;
+        }
+    }
+
+    .descripcion-per2 {
+        @media (min-width:768px){
+        background-color:#ffffff;
+        }
+    }
+}
+
+.contacto-personajes {
+    @media (max-width:768px){
+    background-color:$colorC!important;
+    }
+}

@@ -1,0 +1,110 @@
+.contenedor-episodio {
+    display: flex;
+    background-color:$colorA;
+    margin-top: 60px;
+    @media (min-width:500px){
+        display: flex;
+        background-color:$colorA;
+        margin-top: 60px;
+    }
+    .margen-ep {
+        display: grid;
+        margin: 30px 10%;
+        justify-items: center;
+        @media (min-width:500px){
+            display: flex;
+        }
+        .foto-portada {
+            height: 300px;
+        }
+        .descripcion-ep {
+            display: flex;
+            margin-top: 5%;
+            font-size: 15px;
+            flex-direction: column;
+            align-items: center;
+            @media (min-width:500px){
+                display: flex;
+                margin-top: 0;
+                margin-left: 5%;
+                font-size: 13px;
+                align-items: flex-start;
+            }
+            @media (min-width:720px){
+                font-size: 90%;
+                }
+            @media (min-width:768px){
+                font-size: 100%;
+            }
+            @media (min-width: 1024px){
+                font-size: 130%;
+            }
+            
+            .desc-ep {
+                text-align: justify;
+            }
+        }
+    }
+    
+}
+
+.box-video {
+    display: flex;
+    justify-content: center;
+    margin: 30px 10%;
+    flex-direction: column;
+    .contenedor-video {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 30px;
+        height: 280px;
+        @media (min-width:500px){
+            height: 300px;
+        }
+        @media (min-width:720px){
+            height: 450px;
+        }
+        @media (min-width: 1200px){
+            height: 800px;
+        }
+        iframe {
+            width: 100%;
+        }
+    }
+    .botones {
+        @media (min-width:500px){
+        display: flex;
+        justify-content: space-between;
+        }
+    }
+
+    .botones-ep1 {
+        @media (min-width:500px){
+        display: flex;
+        justify-content: flex-end;
+        }
+    }
+
+    .botones-ep5 {
+        @media (min-width:500px){
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+    
+    .enlace-boton {
+        text-decoration: none;
+        text-align: center;
+        .boton-izq,.boton-der {
+            color:$colorB;
+            font-weight: 600;
+            border-radius: 20px;
+            background-color:$colorA;
+            transition: all 0.5s;
+            &:hover{
+                transform: scale(0.9);
+            }
+        }
+    }
+}   

@@ -1,0 +1,62 @@
+.portada {
+    margin-top: 60px;
+}
+
+.bienvenida {
+    background-color:$colorB;
+    text-align: center;
+    padding: 5%;
+    @media (min-width:768px){
+        padding: 5% 15%;
+    }
+    @media (min-width: 1024px){
+        padding: 5% 25%;    
+    }
+    
+    .titulo-bien {
+        color:$colorC;
+        font-size: 1.3em;
+        margin-bottom: 1em;
+    }
+
+    .parrafo-bien {
+        color: $colorA;
+        font-size: 0.8em;
+        font-weight: 600;
+    }
+}
+
+
+#episodios {
+    display: grid;
+    justify-items: center;
+    @media (min-width:768px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: 1024px){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media (min-width: 1200px){
+    padding: 0 5%;
+    }
+
+    .caja-poster-episodio {
+        margin: 30px 0px;
+
+        .poster {
+            width: 300px;
+            height: 450px;
+            border: 2px solid black;
+            transition: all 1s;
+            &:hover{
+                transform: scale(1.1);
+            }
+            @media (min-width: 1200px){
+                width: 350px;
+                height: 500px; 
+            }
+        }
+    }
+}
