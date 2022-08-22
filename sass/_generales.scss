@@ -16,6 +16,10 @@ body {
         
         .navbar-fondo {
             background-color: #ffffff;
+
+            .logo-nav {
+                @include sizes(100px,40px)
+            }
         }
 
         @media (min-width: 720px) {
