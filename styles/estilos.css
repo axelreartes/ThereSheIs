@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;300;700;900&display=swap");
 .footer-ext, body footer {
   background-color: rgb(68, 68, 68);
   margin-bottom: 0;
@@ -13,9 +13,17 @@
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
 body {
   min-height: 100vh;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 body header {
   position: fixed;
@@ -165,7 +173,7 @@ body footer .icon {
 }
 .caja-personajes .descripcion-per .titulo-per,
 .caja-personajes .descripcion-per2 .titulo-per {
-  margin-bottom: 0.5em;
+  font-size: 40px;
 }
 @media (min-width: 768px) {
   .caja-personajes .fondo-per, .caja-personajes .fondo-per2 {
@@ -292,6 +300,12 @@ body footer .icon {
 .box-video .contenedor-video iframe {
   width: 100%;
 }
+.box-video .botones .enlace-boton .boton-izq {
+  margin-bottom: 10px;
+}
+.box-video .botones .boton-izq, .box-video .botones .boton-der {
+  padding: 5px;
+}
 @media (min-width: 500px) {
   .box-video .botones {
     display: flex;
@@ -304,11 +318,17 @@ body footer .icon {
     justify-content: flex-end;
   }
 }
+.box-video .botones-ep1 .enlace-boton .boton-der {
+  padding: 5px;
+}
 @media (min-width: 500px) {
   .box-video .botones-ep5 {
     display: flex;
     justify-content: flex-start;
   }
+}
+.box-video .botones-ep5 .enlace-boton .boton-izq {
+  padding: 5px;
 }
 .box-video .enlace-boton {
   text-decoration: none;

@@ -3,9 +3,17 @@
     margin: 0;
 }
 
+p {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
 body {
     min-height: 100vh;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
     header {
         position: fixed;
