@@ -1,17 +1,18 @@
 .contenedor-episodio {
     display: flex;
-    background-color:$colorA;
+    background-color:$colorB;
     margin-top: 60px;
     @media (min-width:500px){
         display: flex;
-        background-color:$colorA;
         margin-top: 60px;
     }
     .margen-ep {
         display: grid;
         margin: 30px 10%;
         justify-items: center;
-        @media (min-width:500px){
+        border: 2px solid $colorC;
+        padding: 10px;
+        @media (min-width:550px){
             display: flex;
         }
         .foto-portada {
@@ -20,28 +21,49 @@
         .descripcion-ep {
             display: flex;
             margin-top: 5%;
-            font-size: 15px;
             flex-direction: column;
             align-items: center;
-            @media (min-width:500px){
+            justify-content: space-between;
+            @media (min-width:550px){
                 display: flex;
                 margin-top: 0;
                 margin-left: 5%;
-                font-size: 13px;
                 align-items: flex-start;
             }
-            @media (min-width:720px){
-                font-size: 90%;
-                }
-            @media (min-width:768px){
-                font-size: 100%;
-            }
-            @media (min-width: 1024px){
-                font-size: 130%;
-            }
             
+            
+            .titulo-ep {
+                color: $colorD;
+                font-size: 30px;
+                @media (min-width:920px){
+                    font-size: 35px;
+                }
+            }
+
             .desc-ep {
                 text-align: justify;
+                color: $colorC;
+                font-size: 13px;
+                @media (min-width:700px){
+                    font-size: 15px;
+                }
+                @media (min-width:1300px){
+                    font-size: 20px;
+                }
+            }
+
+            .prueba1 {
+                list-style: none;
+                color: $colorD;
+                padding-left: 0;
+                margin-top: 5px;
+                margin-bottom: 0;
+                text-align: center;
+                font-size: 15px;
+                @media (min-width: 550px){
+                    text-align: left;
+                    font-size: 15px;
+                }
             }
         }
     }
@@ -51,22 +73,17 @@
 .box-video {
     display: flex;
     justify-content: center;
-    margin: 30px 10%;
+    margin: 30px 0;
     flex-direction: column;
     .contenedor-video {
         display: flex;
         justify-content: center;
-        width: 100%;
         margin-bottom: 30px;
-        height: 280px;
-        @media (min-width:500px){
-            height: 300px;
-        }
-        @media (min-width:720px){
-            height: 450px;
-        }
-        @media (min-width: 1200px){
-            height: 800px;
+        height: 56.25vw;
+        @media (min-width:1285px){
+            height: 720px;
+            margin-left: 10%;
+            margin-right: 10%;
         }
         iframe {
             width: 100%;
@@ -74,11 +91,21 @@
     }
     
     .botones {
+        margin: 0 10%;
         .enlace-boton .boton-izq {
             margin-bottom: 10px;
+            background-color: $colorB;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.452);
+        }
+        .enlace-boton .boton-der {
+            background-color: $colorB;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.452);
         }
         .boton-izq, .boton-der {
             padding: 5px;
+            .texto-boton {
+                color: $colorC;
+            }
         }
         @media (min-width:500px){
         display: flex;
@@ -89,22 +116,32 @@
     }
 
     .botones-ep1 {
+        margin: 0 10%;
         @media (min-width:500px){
         display: flex;
         justify-content: flex-end;
         }
         .enlace-boton .boton-der {
             padding: 5px;
+            background-color: $colorB;
+            .texto-boton {
+                color: $colorC;
+            }
         }
     }
 
     .botones-ep5 {
+        margin: 0 10%;
         @media (min-width:500px){
             display: flex;
             justify-content: flex-start;
         }
         .enlace-boton .boton-izq{
             padding: 5px;
+            background-color: $colorB;
+            .texto-boton {
+                color: $colorC;
+            }
         }
     }
     

@@ -32,21 +32,21 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="../index.html">INICIO</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./personajes.html">PERSONAJES</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               EPISODIOS
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="./episodio1.html">There She Is!!</a></li>
-                              <li><a class="dropdown-item" href="episodio2.html">Cake Dance</a></li>
-                              <li><a class="dropdown-item" href="./episodio3.html">Doki&Nabi</a></li>
-                              <li><a class="dropdown-item" href="./episodio4.html">Paradise</a></li>
-                              <li><a class="dropdown-item" href="./episodio5.html">Imagine</a></li>
+                              <li class="reglon-nav"><a class="dropdown-item" href="./episodio1.html">There She Is!!</a></li>
+                              <li class="reglon-nav"><a class="dropdown-item" href="episodio2.html">Cake Dance</a></li>
+                              <li class="reglon-nav"><a class="dropdown-item" href="./episodio3.html">Doki&Nabi</a></li>
+                              <li class="reglon-nav"><a class="dropdown-item" href="./episodio4.html">Paradise</a></li>
+                              <li class="reglon-nav"><a class="dropdown-item" href="./episodio5.html">Imagine</a></li>
                               <li><a class="dropdown-item disabled" href="#">Another Step</a></li>
                             </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="./personajes.html">PERSONAJES</a>
                         </li>
                     </ul>
                 </div>
@@ -61,7 +61,12 @@
                 </div>
                 <div class="descripcion-ep">
                     <h1 class="titulo-ep">There she is!! Step 2 - Cake Dance</h1>
-                    <p class="desc-ep">Es la fiesta de cumpleaños de Doki y hay varios personajes nuevos, incluidos Hana, su banda y Pizza, su guardaespaldas. Nabi es el encargado de llevar el pastel pero tiene muchos problemas para hacerlo ya que tiene que esquivar a toda la gente de la ciudad, debe escapar de una estampida de animales y del ataque del Clan Jjintta, cuyos miembros creen que Nabi es algo malo para Doki. ¿Logrará llegar con el pastel en una pieza?</p>
+                    <p class="desc-ep">Es la fiesta de cumpleaños de Doki y hay varios personajes nuevos, incluidos Hana, su banda y Pizza, su guardaespaldas. Nabi es el encargado de llevar el pastel, pero tiene muchos problemas para hacerlo, ya que tiene que esquivar a toda la gente de la ciudad, debe escapar de una estampida de animales y del ataque del Clan Jjintta, cuyos miembros creen que Nabi es algo malo para Doki. ¿Logrará llegar con el pastel en una pieza?</p>
+                    <ul class="prueba1">
+                        <li>Fecha: 11/03/2005</li>
+                        <li class="prueba2">Duracion: 4min</li>
+                        <li class="prueba2">Cancion: Happy Birthday to Me - Bulldog Mansion</li>
+                    </ul>
                 </div> 
             </div>
         </section>
@@ -71,8 +76,8 @@
                 <iframe src="https://www.youtube.com/embed/q_ZUhJ33X80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="botones">
-                <a class="enlace-boton" href="../sections/episodio1.html"><div class="boton-izq"><p>Episodio anterior</p></div></a>
-                <a class="enlace-boton" href="../sections/episodio3.html"><div class="boton-der"><p>Episodio siguiente</p></div></a>
+                <a class="enlace-boton" href="../sections/episodio1.html"><div class="boton-izq"><p class="texto-boton">Episodio anterior</p></div></a>
+                <a class="enlace-boton" href="../sections/episodio3.html"><div class="boton-der"><p class="texto-boton">Episodio siguiente</p></div></a>
             </div>
         </section>
     </div>
@@ -83,14 +88,17 @@
             <p class="texto-contacto">¿Te gusta "There she is!!" tanto como a nosotros? ¡Suscríbete para recibir novedades!</p>
 			<form action="#">
 				<label for="email"></label>
-				<input class= centrado type="email" placeholder="Ingresa tu email" name="email">
-                <input type="submit" value="Suscribirse">
+				<input type="email" placeholder="Ingresa tu email" name="email">
+                <input class="boton-sub" type="submit" value="Suscribirse">
 			</form>
 		</article>
 	<!-- cierre de form contacto -->
     </section>
     
     <footer>
+        <div class="firma">
+            <p>Sitio web desarrollado por Axel Reartes.</p>
+        </div>
         <div class="redes">
             <a href="https://www.instagram.com/amalloc.sambakza/" target="_blank"><img class="icon" src="../img/icon_ig.svg" alt="instagram"></a>
             <a href="https://www.facebook.com/Sambakza.net" target="_blank"><img class="icon" src="../img/icon_fb.svg" alt="facebook"></a>

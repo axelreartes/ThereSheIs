@@ -3,34 +3,44 @@
 }
 
 .bienvenida {
-    background-color:$colorB;
+    background-color:$colorC;
     text-align: center;
     padding: 5%;
     @media (min-width:768px){
         padding: 5% 15%;
     }
     @media (min-width: 1024px){
-        padding: 5% 25%;    
+        padding: 3% 20%;    
+    }
+    @media (min-width: 1700px){
+        padding: 3% 400px;    
     }
     
     .titulo-bien {
-        color:$colorC;
-        font-size: 1.3em;
-        margin-bottom: 1em;
+        color:$colorA;
+        font-size: 30px;
+        margin-bottom: 10px;
     }
 
-    .parrafo-bien {
-        color: $colorA;
-        font-size: 0.8em;
-        font-weight: 600;
+    .parrafo-bien1 {
+        color: $colorB;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .parrafo-bien2 {
+        color: $colorB;
+        font-size: 16px;
     }
 }
 
 
 #episodios {
     display: grid;
+    grid-gap: 30px;
     justify-items: center;
-    background-color: #fafafa;
+    background-color: $colorA;
+    padding: 35px 0;
     @media (min-width:768px){
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -39,24 +49,22 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    @media (min-width: 1200px){
-    padding: 0 5%;
+    @media (min-width: 1500px){
+    padding: 35px 10%;
     }
 
     .poster1 {
         background-image: url(../img/a1.png);
         background-position: center;
         background-size: cover;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
-        margin: 30px 0px;
         @include sizes (300px, 450px);
-        border: 2px solid #401223;
+        border: 2px solid $colorD;
         transition: all 0.4s ease;
         &:hover{
             background-image: url(../img/a2.png);
             transform: scale(1.1);
         }
-        @media (min-width: 1200px){
+        @media (min-width: 1250px){
             @include sizes (350px, 500px);
         }
     }
@@ -66,15 +74,14 @@
         background-position: center;
         background-size: cover;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
-        margin: 30px 0px;
         @include sizes (300px, 450px);
-        border: 2px solid #401223;
+        border: 2px solid $colorD;
         transition: all 0.4s ease;
         &:hover{
             background-image: url(../img/b2.png);
             transform: scale(1.1);
         }
-        @media (min-width: 1200px){
+        @media (min-width: 1250px){
             @include sizes (350px, 500px);
         }
     }
@@ -84,15 +91,14 @@
         background-position: center;
         background-size: cover;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
-        margin: 30px 0px;
         @include sizes (300px, 450px);
-        border: 2px solid #401223;
+        border: 2px solid $colorD;
         transition: all 0.4s ease;
         &:hover{
             background-image: url(../img/c2.png);
             transform: scale(1.1);
         }
-        @media (min-width: 1200px){
+        @media (min-width: 1250px){
             @include sizes (350px, 500px);
         }
     }
@@ -102,15 +108,14 @@
         background-position: center;
         background-size: cover;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
-        margin: 30px 0px;
         @include sizes (300px, 450px);
-        border: 2px solid #401223;
+        border: 2px solid $colorD;
         transition: all 0.4s ease;
         &:hover{
             background-image: url(../img/d2.png);
             transform: scale(1.1);
         }
-        @media (min-width: 1200px){
+        @media (min-width: 1250px){
             @include sizes (350px, 500px);
         }
     }
@@ -120,15 +125,14 @@
         background-position: center;
         background-size: cover;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
-        margin: 30px 0px;
         @include sizes (300px, 450px);
-        border: 2px solid #401223;
+        border: 2px solid $colorD;
         transition: all 0.4s ease;
         &:hover{
             background-image: url(../img/e2.png);
             transform: scale(1.1);
         }
-        @media (min-width: 1200px){
+        @media (min-width: 1250px){
             @include sizes (350px, 500px);
         }
     }
@@ -138,15 +142,14 @@
         background-position: center;
         background-size: cover;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
-        margin: 30px 0px;
         @include sizes (300px, 450px);
-        border: 2px solid #401223;
+        border: 2px solid $colorD;
         transition: all 0.4s ease;
         &:hover{
             transform: scale(1.1);
             background-image: url(../img/stepp6.png);
         }
-        @media (min-width: 1200px){
+        @media (min-width: 1250px){
             @include sizes (350px, 500px);
         } 
     }

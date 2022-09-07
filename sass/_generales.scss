@@ -13,20 +13,27 @@ h1, h2, h3 {
 
 body {
     min-height: 100vh;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Philosopher', sans-serif;
 
     header {
         position: fixed;
         width: 100%;
         top: 0;
         z-index: 20;
-        border-bottom: 1px solid $colorA;
+        border-bottom: 1px solid $colorB;
         
         .navbar-fondo {
             background-color: #ffffff;
 
             .logo-nav {
-                @include sizes(100px,40px)
+                @include sizes(120px,40px)
+            }
+
+            .navbar-nav{
+                font-size: large;
+                .reglon-nav {
+                    border-bottom: 1px solid gainsboro;
+                }
             }
         }
 
@@ -56,14 +63,24 @@ body {
     }
     
     .contacto {
-        background-color:$colorA;
+        background-color:$colorC;
         text-align: center;
         color: $colorB;
         font-weight: 900;
-        padding: 2em;
+        padding: 5%;
+        @media (min-width:1020px){
+            padding: 40px;
+        }
 
         .texto-contacto {
-            margin-bottom: 1em;
+            margin-bottom: 15px;
+        }
+
+        .boton-sub {
+            color: $colorB;
+            background-color: $colorD;
+            padding: 0 5px;
+            border: 1px solid $colorD
         }
     }
     
@@ -72,7 +89,13 @@ body {
         @extend .footer-ext;
         
         .icon {
-            width: 40px;
+            width: 35px;
+            margin: 0px 5px;
+        }
+
+        .firma {
+            color: $colorB;
+            font-size: 15px;
         }
     }
 }

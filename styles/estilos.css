@@ -1,11 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;300;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@100;300;700;900&display=swap");
 .footer-ext, body footer {
-  background-color: #401223;
+  background-color: #2b2510;
   margin-bottom: 0;
   display: flex;
-  justify-content: flex-end;
-  padding: 1em;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
   margin-top: 0;
+}
+@media (min-width: 500px) {
+  .footer-ext, body footer {
+    flex-direction: row;
+  }
+}
+.footer-ext .redes, body footer .redes {
+  margin-bottom: 10px;
+}
+@media (min-width: 500px) {
+  .footer-ext .redes, body footer .redes {
+    margin-bottom: 0;
+  }
 }
 
 * {
@@ -23,21 +38,27 @@ h1, h2, h3 {
 
 body {
   min-height: 100vh;
-  font-family: "Roboto", sans-serif;
+  font-family: "Philosopher", sans-serif;
 }
 body header {
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 20;
-  border-bottom: 1px solid #F2ECD8;
+  border-bottom: 1px solid #ede6cb;
 }
 body header .navbar-fondo {
   background-color: #ffffff;
 }
 body header .navbar-fondo .logo-nav {
-  width: 100px;
+  width: 120px;
   height: 40px;
+}
+body header .navbar-fondo .navbar-nav {
+  font-size: large;
+}
+body header .navbar-fondo .navbar-nav .reglon-nav {
+  border-bottom: 1px solid gainsboro;
 }
 @media (min-width: 720px) {
   body header .navbar-expand-lg .navbar-collapse {
@@ -59,17 +80,33 @@ body header .navbar-fondo .logo-nav {
   }
 }
 body .contacto {
-  background-color: #F2ECD8;
+  background-color: #716844;
   text-align: center;
-  color: #401223;
+  color: #ede6cb;
   font-weight: 900;
-  padding: 2em;
+  padding: 5%;
+}
+@media (min-width: 1020px) {
+  body .contacto {
+    padding: 40px;
+  }
 }
 body .contacto .texto-contacto {
-  margin-bottom: 1em;
+  margin-bottom: 15px;
+}
+body .contacto .boton-sub {
+  color: #ede6cb;
+  background-color: #2b2510;
+  padding: 0 5px;
+  border: 1px solid #2b2510;
 }
 body footer .icon {
-  width: 40px;
+  width: 35px;
+  margin: 0px 5px;
+}
+body footer .firma {
+  color: #ede6cb;
+  font-size: 15px;
 }
 
 .portada {
@@ -77,7 +114,7 @@ body footer .icon {
 }
 
 .bienvenida {
-  background-color: #401223;
+  background-color: #716844;
   text-align: center;
   padding: 5%;
 }
@@ -88,24 +125,35 @@ body footer .icon {
 }
 @media (min-width: 1024px) {
   .bienvenida {
-    padding: 5% 25%;
+    padding: 3% 20%;
+  }
+}
+@media (min-width: 1700px) {
+  .bienvenida {
+    padding: 3% 400px;
   }
 }
 .bienvenida .titulo-bien {
   color: #fafafa;
-  font-size: 1.3em;
-  margin-bottom: 1em;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
-.bienvenida .parrafo-bien {
-  color: #F2ECD8;
-  font-size: 0.8em;
-  font-weight: 600;
+.bienvenida .parrafo-bien1 {
+  color: #ede6cb;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.bienvenida .parrafo-bien2 {
+  color: #ede6cb;
+  font-size: 16px;
 }
 
 #episodios {
   display: grid;
+  grid-gap: 30px;
   justify-items: center;
   background-color: #fafafa;
+  padding: 35px 0;
 }
 @media (min-width: 768px) {
   #episodios {
@@ -119,27 +167,25 @@ body footer .icon {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   #episodios {
-    padding: 0 5%;
+    padding: 35px 10%;
   }
 }
 #episodios .poster1 {
   background-image: url(../img/a1.png);
   background-position: center;
   background-size: cover;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
-  margin: 30px 0px;
   width: 300px;
   height: 450px;
-  border: 2px solid #401223;
+  border: 2px solid #2b2510;
   transition: all 0.4s ease;
 }
 #episodios .poster1:hover {
   background-image: url(../img/a2.png);
   transform: scale(1.1);
 }
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
   #episodios .poster1 {
     width: 350px;
     height: 500px;
@@ -150,17 +196,16 @@ body footer .icon {
   background-position: center;
   background-size: cover;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
-  margin: 30px 0px;
   width: 300px;
   height: 450px;
-  border: 2px solid #401223;
+  border: 2px solid #2b2510;
   transition: all 0.4s ease;
 }
 #episodios .poster2:hover {
   background-image: url(../img/b2.png);
   transform: scale(1.1);
 }
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
   #episodios .poster2 {
     width: 350px;
     height: 500px;
@@ -171,17 +216,16 @@ body footer .icon {
   background-position: center;
   background-size: cover;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
-  margin: 30px 0px;
   width: 300px;
   height: 450px;
-  border: 2px solid #401223;
+  border: 2px solid #2b2510;
   transition: all 0.4s ease;
 }
 #episodios .poster3:hover {
   background-image: url(../img/c2.png);
   transform: scale(1.1);
 }
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
   #episodios .poster3 {
     width: 350px;
     height: 500px;
@@ -192,17 +236,16 @@ body footer .icon {
   background-position: center;
   background-size: cover;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
-  margin: 30px 0px;
   width: 300px;
   height: 450px;
-  border: 2px solid #401223;
+  border: 2px solid #2b2510;
   transition: all 0.4s ease;
 }
 #episodios .poster4:hover {
   background-image: url(../img/d2.png);
   transform: scale(1.1);
 }
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
   #episodios .poster4 {
     width: 350px;
     height: 500px;
@@ -213,17 +256,16 @@ body footer .icon {
   background-position: center;
   background-size: cover;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
-  margin: 30px 0px;
   width: 300px;
   height: 450px;
-  border: 2px solid #401223;
+  border: 2px solid #2b2510;
   transition: all 0.4s ease;
 }
 #episodios .poster5:hover {
   background-image: url(../img/e2.png);
   transform: scale(1.1);
 }
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
   #episodios .poster5 {
     width: 350px;
     height: 500px;
@@ -234,17 +276,16 @@ body footer .icon {
   background-position: center;
   background-size: cover;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
-  margin: 30px 0px;
   width: 300px;
   height: 450px;
-  border: 2px solid #401223;
+  border: 2px solid #2b2510;
   transition: all 0.4s ease;
 }
 #episodios .poster6:hover {
   transform: scale(1.1);
   background-image: url(../img/stepp6.png);
 }
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
   #episodios .poster6 {
     width: 350px;
     height: 500px;
@@ -262,7 +303,7 @@ body footer .icon {
 @media (min-width: 768px) {
   .caja-personajes .box-foto {
     padding: 0;
-    border: 2px solid black;
+    border: 2px solid #716844;
   }
 }
 .caja-personajes .descripcion-per,
@@ -271,8 +312,8 @@ body footer .icon {
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  background-color: #F2ECD8;
   padding: 5% 10%;
+  background-color: #ede6cb;
 }
 @media (min-width: 1200px) {
   .caja-personajes .descripcion-per,
@@ -283,6 +324,12 @@ body footer .icon {
 .caja-personajes .descripcion-per .titulo-per,
 .caja-personajes .descripcion-per2 .titulo-per {
   font-size: 40px;
+  color: #2b2510;
+}
+.caja-personajes .descripcion-per .texto-per,
+.caja-personajes .descripcion-per2 .texto-per {
+  color: #716844;
+  font-size: medium;
 }
 @media (min-width: 768px) {
   .caja-personajes .fondo-per, .caja-personajes .fondo-per2 {
@@ -303,7 +350,7 @@ body footer .icon {
 }
 @media (min-width: 768px) {
   .caja-personajes .fondo-per {
-    background-color: #F2ECD8;
+    background-color: #ede6cb;
   }
 }
 @media (min-width: 768px) {
@@ -312,21 +359,14 @@ body footer .icon {
   }
 }
 
-@media (max-width: 768px) {
-  .contacto-personajes {
-    background-color: #fafafa !important;
-  }
-}
-
 .contenedor-episodio {
   display: flex;
-  background-color: #F2ECD8;
+  background-color: #ede6cb;
   margin-top: 60px;
 }
 @media (min-width: 500px) {
   .contenedor-episodio {
     display: flex;
-    background-color: #F2ECD8;
     margin-top: 60px;
   }
 }
@@ -334,8 +374,10 @@ body footer .icon {
   display: grid;
   margin: 30px 10%;
   justify-items: center;
+  border: 2px solid #716844;
+  padding: 10px;
 }
-@media (min-width: 500px) {
+@media (min-width: 550px) {
   .contenedor-episodio .margen-ep {
     display: flex;
   }
@@ -346,80 +388,106 @@ body footer .icon {
 .contenedor-episodio .margen-ep .descripcion-ep {
   display: flex;
   margin-top: 5%;
-  font-size: 15px;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
-@media (min-width: 500px) {
+@media (min-width: 550px) {
   .contenedor-episodio .margen-ep .descripcion-ep {
     display: flex;
     margin-top: 0;
     margin-left: 5%;
-    font-size: 13px;
     align-items: flex-start;
   }
 }
-@media (min-width: 720px) {
-  .contenedor-episodio .margen-ep .descripcion-ep {
-    font-size: 90%;
-  }
+.contenedor-episodio .margen-ep .descripcion-ep .titulo-ep {
+  color: #2b2510;
+  font-size: 30px;
 }
-@media (min-width: 768px) {
-  .contenedor-episodio .margen-ep .descripcion-ep {
-    font-size: 100%;
-  }
-}
-@media (min-width: 1024px) {
-  .contenedor-episodio .margen-ep .descripcion-ep {
-    font-size: 130%;
+@media (min-width: 920px) {
+  .contenedor-episodio .margen-ep .descripcion-ep .titulo-ep {
+    font-size: 35px;
   }
 }
 .contenedor-episodio .margen-ep .descripcion-ep .desc-ep {
   text-align: justify;
+  color: #716844;
+  font-size: 13px;
+}
+@media (min-width: 700px) {
+  .contenedor-episodio .margen-ep .descripcion-ep .desc-ep {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1300px) {
+  .contenedor-episodio .margen-ep .descripcion-ep .desc-ep {
+    font-size: 20px;
+  }
+}
+.contenedor-episodio .margen-ep .descripcion-ep .prueba1 {
+  list-style: none;
+  color: #2b2510;
+  padding-left: 0;
+  margin-top: 5px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 15px;
+}
+@media (min-width: 550px) {
+  .contenedor-episodio .margen-ep .descripcion-ep .prueba1 {
+    text-align: left;
+    font-size: 15px;
+  }
 }
 
 .box-video {
   display: flex;
   justify-content: center;
-  margin: 30px 10%;
+  margin: 30px 0;
   flex-direction: column;
 }
 .box-video .contenedor-video {
   display: flex;
   justify-content: center;
-  width: 100%;
   margin-bottom: 30px;
-  height: 280px;
+  height: 56.25vw;
 }
-@media (min-width: 500px) {
+@media (min-width: 1285px) {
   .box-video .contenedor-video {
-    height: 300px;
-  }
-}
-@media (min-width: 720px) {
-  .box-video .contenedor-video {
-    height: 450px;
-  }
-}
-@media (min-width: 1200px) {
-  .box-video .contenedor-video {
-    height: 800px;
+    height: 720px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 .box-video .contenedor-video iframe {
   width: 100%;
 }
+.box-video .botones {
+  margin: 0 10%;
+}
 .box-video .botones .enlace-boton .boton-izq {
   margin-bottom: 10px;
+  background-color: #ede6cb;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.452);
+}
+.box-video .botones .enlace-boton .boton-der {
+  background-color: #ede6cb;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.452);
 }
 .box-video .botones .boton-izq, .box-video .botones .boton-der {
   padding: 5px;
+}
+.box-video .botones .boton-izq .texto-boton, .box-video .botones .boton-der .texto-boton {
+  color: #716844;
 }
 @media (min-width: 500px) {
   .box-video .botones {
     display: flex;
     justify-content: space-between;
   }
+}
+.box-video .botones-ep1 {
+  margin: 0 10%;
 }
 @media (min-width: 500px) {
   .box-video .botones-ep1 {
@@ -429,6 +497,13 @@ body footer .icon {
 }
 .box-video .botones-ep1 .enlace-boton .boton-der {
   padding: 5px;
+  background-color: #ede6cb;
+}
+.box-video .botones-ep1 .enlace-boton .boton-der .texto-boton {
+  color: #716844;
+}
+.box-video .botones-ep5 {
+  margin: 0 10%;
 }
 @media (min-width: 500px) {
   .box-video .botones-ep5 {
@@ -438,16 +513,20 @@ body footer .icon {
 }
 .box-video .botones-ep5 .enlace-boton .boton-izq {
   padding: 5px;
+  background-color: #ede6cb;
+}
+.box-video .botones-ep5 .enlace-boton .boton-izq .texto-boton {
+  color: #716844;
 }
 .box-video .enlace-boton {
   text-decoration: none;
   text-align: center;
 }
 .box-video .enlace-boton .boton-izq, .box-video .enlace-boton .boton-der {
-  color: #401223;
+  color: #ede6cb;
   font-weight: 600;
   border-radius: 20px;
-  background-color: #F2ECD8;
+  background-color: #fafafa;
   transition: all 0.5s;
 }
 .box-video .enlace-boton .boton-izq:hover, .box-video .enlace-boton .boton-der:hover {
