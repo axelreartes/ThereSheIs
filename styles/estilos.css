@@ -181,6 +181,7 @@ body footer .firma {
   background-image: url(../img/a1.png);
   background-position: center;
   background-size: cover;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
   width: 250px;
   height: 400px;
   border: 2px solid #2b2510;
